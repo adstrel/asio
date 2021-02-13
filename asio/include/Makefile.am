@@ -334,6 +334,8 @@ nobase_include_HEADERS = \
 	asio/execution/submit.hpp \
 	asio/executor.hpp \
 	asio/executor_work_guard.hpp \
+	asio/experimental/as_single.hpp \
+	asio/experimental/impl/as_single.hpp \
 	asio/generic/basic_endpoint.hpp \
 	asio/generic/datagram_protocol.hpp \
 	asio/generic/detail/endpoint.hpp \
@@ -373,7 +375,6 @@ nobase_include_HEADERS = \
 	asio/impl/serial_port_base.hpp \
 	asio/impl/serial_port_base.ipp \
 	asio/impl/spawn.hpp \
-	asio/impl/src.cpp \
 	asio/impl/src.hpp \
 	asio/impl/system_context.hpp \
 	asio/impl/system_context.ipp \

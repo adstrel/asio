@@ -2,7 +2,7 @@
 // async_result.hpp
 // ~~~~~~~~~~~~~~~~
 //
-// Copyright (c) 2003-2020 Christopher M. Kohlhoff (chris at kohlhoff dot com)
+// Copyright (c) 2003-2021 Christopher M. Kohlhoff (chris at kohlhoff dot com)
 //
 // Distributed under the Boost Software License, Version 1.0. (See accompanying
 // file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
@@ -312,7 +312,7 @@ struct async_result_has_initiate_memfn
     typename ::asio::decay<ct>::type, sig>::completion_handler_type
 #endif
 
-#if defined(GENERATION_DOCUMENTATION)
+#if defined(GENERATING_DOCUMENTATION)
 # define ASIO_INITFN_AUTO_RESULT_TYPE(ct, sig) \
   auto
 #elif defined(ASIO_HAS_RETURN_TYPE_DEDUCTION)
@@ -323,7 +323,7 @@ struct async_result_has_initiate_memfn
   ASIO_INITFN_RESULT_TYPE(ct, sig)
 #endif
 
-#if defined(GENERATION_DOCUMENTATION)
+#if defined(GENERATING_DOCUMENTATION)
 # define ASIO_INITFN_DEDUCED_RESULT_TYPE(ct, sig, expr) \
   void_or_deduced
 #elif defined(ASIO_HAS_DECLTYPE)
